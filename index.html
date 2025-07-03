@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Registration Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Calibri', sans-serif;
+      background-color:  #e0f7f4;
+      color: #2c3e50;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 28px;
+      color: #1e3d59;
+    }
+
+    p {
+      text-align: center;
+      color: black;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+    form {
+      max-width: 800px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      padding: 30px 14px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .form-group label {
+      width: 180px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="password"],
+    .form-group input[type="file"],
+    .form-group textarea {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-right: 70px;
+      background-color: #f7fdfd;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+    }
+
+    .submit-btn {
+      background-color: #17bebb;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      display: block;
+      width: 50%;
+    }
+
+    .submit-btn:hover {
+      background-color: #139e9b;
+    }
+
+   
+
+  
+
+   
+  </style>
+</head>
+<body>
+
+  <h1>Registration Form</h1>
+  <p>Fill in the form below to create your account</p>
+
+  <form autocomplete="off">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="fatherName">Father's Name:</label>
+      <input type="text" id="fatherName" name="fatherName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="motherName">Mother's Name:</label>
+      <input type="text" id="motherName" name="motherName" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required />
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="gender-options">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+        <label><input type="radio" name="gender" value="Other"> Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="file" required />
+    </div>
+ <div class="form-group">
+      <label>Programming Languages:</label>
+      <div class="checkbox-options">
+        <label><input type="checkbox" name="language" value="JAVA"> C</label>
+        <label><input type="checkbox" name="language" value="HTML"> C++</label>
+        <label><input type="checkbox" name="language" value="Javascript"> Java</label>
+        <label><input type="checkbox" name="language" value="Python"> Python</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+    </div>
+
+   <center><button type="submit" class="submit-btn">Submit</button></center>
+  </form>
+
+</body>
+</html>
